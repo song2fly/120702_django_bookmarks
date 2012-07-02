@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>DJANGO BOOKMARK - USER : {{ username }} </title>
+	</head>
+	<body>
+		<h1>{{ username }} 's BOOKMARK</h1>
+		{% if bookmarks %}
+			<ul>
+				{% for bookmark in bookmarks %}
+					<li><a href="{{ bookmark.link.url }}">
+						{{ bookmark.title }}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p> No Bookmark </p>
+		{% endif %}
+	</body>
+</html>

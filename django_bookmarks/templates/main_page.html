@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Welcome to bookmarks. {% endblock %}
+{% block head %}Welcome to DJANGO Bookmark. {% endblock %}
+{% block content %}
+	{% if user.username %}
+		<p>{{ user.username }}. Hello
+		You can store bookmark here!</p>
+	{% else %}
+		<p>Hello!
+		Plz go to login page.
+		</p>
+	{% endif %}
+{% endblock %}

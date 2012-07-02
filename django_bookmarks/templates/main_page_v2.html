@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>DJANGO BOOKMARK</title>
+	</head>
+	<body>
+		<h1>Welcome django bookmark!!!</h1>
+		{% if user.username %}
+			<p>{{user.username}}. Hello</p>
+			You can store your bookmark!
+		{% else %}
+			<p>Hello! plz visit the login page</p>
+		{% endif %}
+	</body>
+</html>
+
